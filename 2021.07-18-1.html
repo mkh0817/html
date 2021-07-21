@@ -3,10 +3,14 @@
     <head>
         <title>Youtube</title>
         <style>
-            *{margin: 0; padding: 0; overflow: hidden;}
-            body{background-color: #181818;}
-            .box1{background-color: #202020; width: 240px; height: 969px}
-            .box2{background-color: #202020; width: 87.3%; height: 115px; position: absolute; top: 0px; left: 240px;}
+            *{margin: 0; padding: 0;}
+            body{background-color: #181818; overflow: hidden;}
+            .box1{background-color: #202020; width: 240px; height: 969px; display: flex; flex-direction:column; flex-wrap:wrap; align-content: center; float: left;} 
+            .box1 div{display: flex; flex-direction: row; width: 200px; align-items: center;}
+            .box2{background-color: #202020; width: 87.3%; height: 115px; position: absolute; top: 0px; left: 240px; float: left;}
+            .box3{background-color: #181818; width:100%; height: 969px; display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; position: absolute; top: 116px; left: 241px;}
+            .box3 div{display: flex; flex-direction: column; width: 19.65%; background-color: #181818; float: left;}
+            #title{display: flex; flex-direction: row; width: 100%;}
             div{display: inline-block;}
             p{font-size: 14px; line-height: 19px; color: white;}
             hr{height: 1px; background-color: #4b4b4b; border: none;}
@@ -28,59 +32,127 @@
             <br>
             <hr>
         </div>
-        <div class="box1" style="display: flex;">
-            <br><br><p style="line-height: 15px;">&nbsp;</p>
-            <br><img src="./img/home%20icon.png" style="position: absolute; top: 72px; left: 22px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 홈</p>
-            <br><img src="./img/home2%20icon.png" style="position: absolute; top: 111px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 탐색</p>
-            <br><img src="./img/home3%20icon.png" style="position: absolute; top: 150px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 구독</p>
-            <br><p style="line-height: 5px;">&nbsp;</p><hr width="224px">
-            <br><img src="./img/home4%20icon.png" style="position: absolute; top: 217px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 보관함</p>
-            <br><img src="./img/home5%20icon.png" style="position: absolute; top: 257px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 시청 기록</p>
-            <br><img src="./img/home6%20icon.png" style="position: absolute; top: 296px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 내 동영상</p>
-            <br><img src="./img/home7%20icon.png" style="position: absolute; top: 335px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 나중에 볼 동영상</p>
-            <br><img src="./img/home8%20icon.png" style="position: absolute; top: 376px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 좋아요 표시한 동영상</p>
-            <br><img src="./img/home9%20icon.png" style="position: absolute; top: 417px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 더보기</p>
-            <br><p style="line-height: 5px;">&nbsp;</p><hr width="224px">
-            <br><p style="color: rgb(170, 170, 170)">&emsp;&emsp;구독</p>
-            <br><img src="./img/home10%20icon.png" style="position: absolute; top: 523px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 채널 탐색</p>
-            <br><p style="line-height: 5px;">&nbsp;</p><hr width="224px">
-            <br><p style="color: rgb(170, 170, 170)">&emsp;&emsp;<b>YOUTUBE</b> 더보기</p>
-            <br><img src="./img/home11%20icon.png" style="position: absolute; top: 628px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; YouTube Premium</p>
-            <br><img src="./img/home12%20icon.png" style="position: absolute; top: 670px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 영화</p>
-            <br><img src="./img/home13%20icon.png" style="position: absolute; top: 710px; left: 18px">
-            <p>&emsp;&emsp;&emsp;&emsp; &ensp; 게임</p>
+
+        <div class="box1">
+            <p style="flex-basis: 70px;">&ensp;</p>
+            <div style="flex-basis: 42px;">
+                <p style="font-size: 10px;">&nbsp;</p><img src="./img/home%20icon.png"><p>&emsp; 홈</p>
+            </div>
+            <div>
+                <img src="./img/home2%20icon.png"><p>&emsp;탐색</p>
+            </div>
+            <div>
+                <img src="./img/home3%20icon.png"><p>&emsp;구독</p>
+            </div>
+            <br><hr><br>
+            <div>
+                <img src="./img/home4%20icon.png"><p>&emsp;보관함</p>
+            </div>
+            <div>
+                <img src="./img/home5%20icon.png"><p>&emsp;시청 기록</p>
+            </div>
+            <div>
+                <img src="./img/home6%20icon.png"><p>&emsp;내 동영상</p>
+            </div>
+            <div>
+                <img src="./img/home7%20icon.png"><p>&emsp;나중에 볼 동영상</p>
+            </div>
+            <div>
+                <img src="./img/home8%20icon.png"><p>&emsp;좋아요 표시한 동영상</p>
+            </div>
+            <div>
+                <img src="./img/home9%20icon.png"><p>&emsp;더보기</p>
+            </div>
+            <br><hr><p style="line-height: 6px;">&nbsp;</p><p style="color: rgb(170, 170, 170); line-height: 40px;">&emsp;구독</p>
+            <div>
+                <img src="./img/home10%20icon.png"><p>&emsp;채널 탐색</p>
+            </div>
+            <br><hr><p style="line-height: 6px;">&nbsp;</p><p style="color: rgb(170, 170, 170); line-height: 40px;">&emsp;<b>YOUTUBE</b> 더보기</p>
+            <div>
+                <img src="./img/home11%20icon.png"><p>&emsp;YouTube Premium</p>
+            </div>
+            <div>
+                <img src="./img/home12%20icon.png"><p>&emsp;영화</p>
+            </div>
+            <div>
+                <img src="./img/home13%20icon.png"><p>&emsp;게임</p>
+            </div>
         </div>
+
         <div class="logo">
             <a href="#"><img src="./img/youtube%20icon.png" style="position: absolute; top: 7px; left: 67px"></a>
             <img src="./img/menu%20icon.png" style="position: absolute; top: 13px; left: 22px">
         </div>
-        <ul class="thumbnail">
-            <li style="background-size:cover; float: left; padding: 12px; top: -6px;">
-                <img src="./img/thumbnail.png" width="100%">
-            </li>
-            <li style="background-size:cover;">
-                <img src="./img/thumbnail2.png" width="100%">
-            </li>
-            <li style="background-size:cover;">
-                <img src="./img/thumbnail3.png" width="100%">
-            </li>
-            <li style="background-size:cover;">
-                <img src="./img/thumbnail2.png" width="100%">
-            </li>
-        </ul>
-        <img class="profile" src="./img/profile%20icon.png" style="position: absolute; top: 350px; left: 17.1%;">
-        <img class="profile" src="./img/profile2%20icon.png" style="position: absolute; top: 350px; left: 34.2%">
+
+        <div class="box3">
+            <p style="flex-basis: 87px;">&ensp;</p>
+            <div>
+                <img src="./img/thumbnail.png" width="95.5%">
+                <p style="line-height: 10px;">&ensp;</p>
+                <div id="title">
+                    <img class="profile" src="./img/profile%20icon.png">&emsp;
+                    <span>
+                        <p style="font-size: 16px; line-height: 24px;">영상 제목 입니다.</p>
+                        <p style="color: rgb(170, 170, 170); line-height: 17px;">유튜버<br>조회수 N만회 <b>·</b> N주 전</p>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="./img/thumbnail2.png" width="95.5%">
+                <p style="line-height: 10px;">&ensp;</p>
+                <div id="title">
+                    <img class="profile" src="./img/profile2%20icon.png">&emsp;
+                    <span>
+                        <p style="font-size: 16px; line-height: 24px;">두번째 영상 제목 입니다.</p>
+                        <p style="color: rgb(170, 170, 170); line-height: 17px;">유튜버<br>조회수 N만회 <b>·</b> N주 전</p>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="./img/thumbnail3.png" width="95.5%">
+                <p style="line-height: 10px;">&ensp;</p>
+                <div id="title">
+                    <img class="profile" src="./img/profile2%20icon.png">&emsp;
+                    <span>
+                        <p style="font-size: 16px; line-height: 24px;">3번째 영상 제목 입니다.</p>
+                        <p style="color: rgb(170, 170, 170); line-height: 17px;">유튜버<br>조회수 N만회 <b>·</b> N주 전</p>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="./img/thumbnail2.png" width="95.5%">
+                <p style="line-height: 10px;">&ensp;</p>
+                <div id="title">
+                    <img class="profile" src="./img/profile%20icon.png">&emsp;
+                    <span>
+                        <p style="font-size: 16px; line-height: 24px;">네번째 영상 제목 입니다.</p>
+                        <p style="color: rgb(170, 170, 170); line-height: 17px;">유튜버<br>조회수 N만회 <b>·</b> N주 전</p>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="./img/thumbnail3.png" width="95.5%">
+                <p style="line-height: 10px;">&ensp;</p>
+                <div id="title">
+                    <img class="profile" src="./img/profile%20icon.png">&emsp;
+                    <span>
+                        <p style="font-size: 16px; line-height: 24px;">5번째 영상 제목 입니다.</p>
+                        <p style="color: rgb(170, 170, 170); line-height: 17px;">유튜버<br>조회수 N만회 <b>·</b> N주 전</p>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="./img/thumbnail.png" width="95.5%">
+                <p style="line-height: 10px;">&ensp;</p>
+                <div id="title">
+                    <img class="profile" src="./img/profile2%20icon.png">&emsp;
+                    <span>
+                        <p style="font-size: 16px; line-height: 24px;">6번째 영상 제목 입니다.</p>
+                        <p style="color: rgb(170, 170, 170); line-height: 17px;">유튜버<br>조회수 N만회 <b>·</b> N주 전</p>
+                    </span>
+                </div>
+            </div>
+        </div> 
+       
     </body>
 </html>
